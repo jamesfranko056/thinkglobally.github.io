@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html ng-app="fi-app">
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thinkglobally.github.io/about/plan/">
+<meta property="og:title" content="Plan">
+<meta property="og:site_name" content="Think Globally">
+<meta property="og:description" content="Fonts">
+<meta name="description" content="Fonts">
+<title>Think Globally</title>
+<script src="/about/static/js/angular.min.js"></script>
+<script src="/about/static/js/webcomponents.min.js"></script>
+<link rel="import" href="/about/static/components/components.min.html">
+<link rel="shortcut icon" href="/about/static/images/favicon_128.png">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500,700">
+<link rel="stylesheet" href="/about/static/css/main.min.css" shim-shadowdom>
+<script src="/about/static/js/google.experimental.js"></script>
+<script src="/about/static/js/main.js"></script>
+<script>
+   new glue.tracking.AutoTrack('UA-65859111-1');
+</script> 
+<body class="plan" unresolved>
+
+<div class="drawer-mask hidden mobile-show"></div>
+<header class="fixed" navigation flex data-scroll-header>
+  <div class="wrap">
+    <div class="clearfix mobile-hide">
+      <div class="right alt">
+        <a class="tab" href="/about/signup/">
+          <paper-button class="invite gtm-invite-header" raised>Request invite</paper-button>
+        </a>
+      </div>
+      <div class="fill">
+        <div class="logo"><a href="/about/main/"><img src="/about/static/images/logo_2x.png"></a></div>
+<a class="tab" href="/about/network/">
+          <paper-tab data-name="network">Network</paper-tab>
+        </a><a class="tab" href="/about/plan/">
+          <paper-tab data-name="plan" class="active">Plan</paper-tab>
+        </a><a class="tab" href="/about/experience/">
+          <paper-tab data-name="communication">Experience</paper-tab>
+        </a>      </div>
+    </div>
+
+    <div class="hidden mobile-show content">
+      <div class="clearfix">
+        <div class="left">
+          <div class="logo"><a href="/about/"><img src="/about/static/images/logo_2x.png"></a></div>
+        </div>
+        <div class="right">
+          <a class="tab" href="/about/signup/"><paper-button class="invite" raised>Request invite</paper-button></a>
+          <paper-icon-button class="hamburger" icon="menu" core-drawer-toggle></paper-icon-button>
+        </div>
+      </div>
+    </div> <!-- mobile-show content -->
+    <div class="drawer hidden mobile-show">
+      <ul class="nav">
+        <li><a href="/about/network/" >Network</a>
+        <li><a href="/about/plan/"  class="active">Plan</a>
+        <li><a href="/about/experience/" >Experience</a>
+        <li><a href="/about/faq/">FAQ</a>
+      </ul>
+    </div>
+  </div> <!-- wrap -->
+</header>
+
+<div class="wrap">
+  <div class="content">
+  <section class="hero">
+  <div class="container">
+    <h1>With the goal of supporting all languages with a harmonius look and feel</h1>
+  </div>
+  <div class="container fab-container">
+    <a href="#sign-up-for-our-one-simple-plan" data-scroll class="fab"><paper-fab icon="expand-more"></paper-fab></a>
+  </div>
+</section>
+
+<section class="banner" id="sign-up-for-our-one-simple-plan">
+  <div class="container">
+    <div class="row">
+      <div class="five columns">
+        <h2>To date, Noto has supported over 300 languages, covering 110.000 characters</h2>
+        <p>It has covered all major living languages such as:
+<ul>
+  <li>English, Vietnamese, Hindi
+  <li>Russian, Arabic, Thai
+  <li>Greek, Japanese, Korean
+  <li>Hebrew, Chinese, Urdu and way beyond
+</ul>
+<p>It also supports smaller languages, like Meetei Mayek and even ancient languages, like Egyptian hieroglyphics.
+
+      </div>
+      <div class="seven columns centered">
+        <div class="plan-calculator" ng-controller="PlanCalculator as ctrl">
+          <div class="item clearfix">
+            <div class="left">Think Globally Basics</div>
+            <div class="right">$270</div>
+          </div>
+
+          <div class="data item clearfix">
+            <div class="left">
+              <paper-dropdown-menu class="gtm-plan-dropdown">
+                <paper-dropdown class="dropdown" duration="250">
+                  <core-menu class="menu" selected="2">
+                    <paper-item value="1">+1 Language</paper-item>
+                    <paper-item value="2">+2 Languages</paper-item>
+                    <paper-item value="3">+3 Languages</paper-item>
+                    <paper-item value="4">+4 Languages</paper-item>
+                    <paper-item value="5">+5 Languages</paper-item>
+                    <paper-item value="6">+6 Languages</paper-item>
+                    <paper-item value="7">+7 Languages</paper-item>
+                    <paper-item value="8">+8 Languages</paper-item>
+                    <paper-item value="9">+9 Languages</paper-item>
+                    <paper-item value="10">+10 Languages</paper-item>
+                  </core-menu>
+                </paper-dropdown>
+              </paper-dropdown-menu>
+            </div>
+            <div class="right">${{ctrl.dataPlanCost}}</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="item clearfix total">
+            <div class="right">${{ctrl.totalCost}} entire</div>
+          </div>
+
+          <p class="sm disclaimer">+ taxes &amp; fees</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner light-grey" id="never-pay-for-unused-data">
+  <div class="container">
+    <div class="row reversed">
+      <div class="seven columns">
+        <div class="aligner fixed">
+          <div class="aligned">
+            <h2>As a developer, supporting different languages comes with a bit of overhead that you have to design for</h2>
+            <p class="margin-bottom">Another important goal of Noto is to provide harmonius look and feel across languages. 
+              To achive harmony is not as simple as setting the same height for all languages. For example, tall languages, like Tibetian in this image, will look really squeezed
+              and much harder to read than English, although the same height for English and Tibetian is actually set.
+          </div>
+        </div>
+      </div>
+      <div class="five columns centered">
+        <div class="video sm-mobile" play-on-enter data-src="/about/static/videos/Fair_MoneyBack_Mobile.webm" data-num-loops="1">
+            <img src="/about/static/videos/Fair_MoneyBack_Mobile.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="budget colored teal">
+  <div class="row container">
+
+    <div class="six columns">
+      <div class="content first">
+        <h2>Only one decision: what&#39;s your budget?</h2>
+        <p>High quality fonts for web site, Android or IOS app. After you sign up, all you need to do is choose language from Basic plan.
+<p>Use our tool to see how Think Globally compares to your current plan and usage. If you have no idea what your usage is, plan calculator is likely for you. :)
+
+      </div>
+    </div>
+
+    <div class="six columns">
+      <div class="content">
+        <div class="budget-calculator ng-cloak" ng-controller="BudgetCalculator as ctrl" ng-class="{'money-owed': ctrl.isMoneyOwed}">
+          <h2>See what our plan would cost</h2>
+          <div class="clearfix">
+
+              <div class="left">Languages:</div>
+              <div class="right">{{ctrl.dataPlanGb}} </div>
+          </div>
+          <paper-slider class="gtm-budget-slider-1 data-plan-gb" value="2" min="0" max="10" step="1" snaps></paper-slider>
+
+          <div class="clearfix">
+
+              <div class="left">Activity on the market:</div>
+              <div class="right">{{ctrl.dataUsageGb}} </div>
+          </div>
+          <paper-slider class="gtm-budget-slider-2 data-usage-gb" value="1.2" max="10" step="0.1"></paper-slider>
+
+          <div class="summary">
+            <div class="item clearfix">
+              <div class="left">Think Globally Basics</div>
+              <div class="right">$270</div>
+            </div>
+
+            <div class="item clearfix">
+
+                <div class="left">{{ctrl.dataPlanGb}} Extra languages </div>
+                <div class="right">+ ${{ctrl.dataPlanCost}}</div>
+            </div>
+
+            <div class="dashed divider"></div>
+
+            <div class="item clearfix">
+
+                <div class="left">Plan cost</div>
+                <div class="right">${{ctrl.monthlyCost}}</div>
+            </div>
+
+            <div class="item clearfix">
+
+                <div class="left money-owed-hide">Unaffected <strong>{{ctrl.dataDelta}} </strong> possibilities</div>
+                <div class="left money-owed-show">Income from localization <strong>{{ctrl.dataDelta}} </strong> </div>
+                <div class="right">
+                  <strong>
+                    <span ng-if="!ctrl.isMoneyOwed">-</span>
+                    <span ng-if="ctrl.isMoneyOwed">+</span>
+                    ${{ctrl.costDelta}}
+                  </strong>
+                </div>
+            </div>
+
+            <div class="dashed divider"></div>
+
+            <div class="item clearfix total">
+
+                <div class="left">Total return:</div>
+                <div class="right">${{ctrl.totalCost}}</div>
+            </div>
+            <p class="sm disclaimer">+ taxes &amp; fees</p>
+          </div> <!-- summary -->
+        </div> <!-- calculator -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section class="banner shorter-desktop">
+  <div class="container">
+    <div class="row reversed">
+      <div class="six columns banner">
+        <h2>Different baselines and vertical metrics of different languages need to be considered to achieve harmony</h2>
+        <p>But with Noto this isn't a problem. On the left image, you can see how the two popular English and Thai fonts make the text difficult to read, and make it faithless. 
+          Look at the different sizes, spacing, and letter kerning.
+        <p class="margin-bottom-sm">
+          </paper-button></a>
+        </p>
+      </div>
+      <div class="six columns">
+        <div class="video extended-left" play-on-enter data-src="/about/static/videos/Fair_International_Desktop.webm" data-num-loops="1">
+            <img src="/about/static/videos/Fair_International_Desktop.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="colored request-an-invite">
+  <div class="container centered">
+    <h2>Be a part of Think Globally from the beginning</h2>
+    <p class="lg">
+    Join our Early Access Program and be one of the first on Think Globally.<br>
+    We look forward to connecting!
+    </p>
+    <div class="centered margin-top">
+      <a href="/about/signup/"><paper-button raised class="gtm-invite-footer inverted">Request invite</paper-button></a>
+    </div>
+  </div>
+</section>  <section class="next-nav">
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          &nbsp;
+        </div>
+        <div class="six columns next">
+          <div class="link">
+            <a href="/about/experience/">
+              <paper-button class="arrowed inline green">
+                The Experience
+                <core-icon icon="arrow-forward"></core-icon>
+              </paper-button>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <ul class="footer">
+	<li><a href="/about/tos/#privacy-notice">Terms & Services</a>
+  </ul>
+
+</div>
+
+<script src="/about/static/js/main.min.js"></script>

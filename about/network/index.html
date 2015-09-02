@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html ng-app="fi-app">
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thinkglobally.github.io/about/network/">
+<meta property="og:title" content="Network">
+<meta property="og:site_name" content="Think Globally">
+<meta property="og:description" content="Fonts">
+<meta name="description" content="Fonts">
+<title>Think Globally</title>
+<script src="/about/static/js/angular.min.js"></script>
+<script src="/about/static/js/webcomponents.min.js"></script>
+<link rel="import" href="/about/static/components/components.min.html">
+<link rel="shortcut icon" href="/about/static/images/favicon_128.png">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500,700">
+<link rel="stylesheet" href="/about/static/css/main.min.css" shim-shadowdom>
+<script src="/about/static/js/google.experimental.js"></script>
+<script src="/about/static/js/main.js"></script>
+<script>
+   new glue.tracking.AutoTrack('UA-65859111-1');
+</script> 
+<body class="network" unresolved>
+
+<div class="drawer-mask hidden mobile-show"></div>
+<header class="fixed" navigation flex data-scroll-header>
+  <div class="wrap">
+    <div class="clearfix mobile-hide">
+      <div class="right alt">
+        <a class="tab" href="/about/signup/">
+          <paper-button class="invite gtm-invite-header" raised>Request invite</paper-button>
+        </a>
+      </div>
+      <div class="fill">
+        <div class="logo"><a href="/about/main/"><img src="/about/static/images/logo_2x.png"></a></div>
+<a class="tab" href="/about/network/">
+          <paper-tab data-name="network" class="active">Network</paper-tab>
+        </a><a class="tab" href="/about/plan/">
+          <paper-tab data-name="plan">Plan</paper-tab>
+        </a><a class="tab" href="/about/experience/">
+          <paper-tab data-name="communication">Experience</paper-tab>
+        </a>      </div>
+    </div>
+
+    <div class="hidden mobile-show content">
+      <div class="clearfix">
+        <div class="left">
+          <div class="logo"><a href="/about/"><img src="/about/static/images/logo_2x.png"></a></div>
+        </div>
+        <div class="right">
+          <a class="tab" href="/about/signup/"><paper-button class="invite" raised>Request invite</paper-button></a>
+          <paper-icon-button class="hamburger" icon="menu" core-drawer-toggle></paper-icon-button>
+        </div>
+      </div>
+    </div> <!-- mobile-show content -->
+    <div class="drawer hidden mobile-show">
+      <ul class="nav">
+        <li><a href="/about/network/"  class="active">Network</a>
+        <li><a href="/about/plan/" >Plan</a>
+        <li><a href="/about/experience/" >Experience</a>
+        <li><a href="/about/faq/">FAQ</a>
+      </ul>
+    </div>
+  </div> <!-- wrap -->
+</header>
+
+<div class="wrap">
+  <div class="content">
+  <section class="hero">
+  <div class="container">
+    <h1>Although most developers don't focus on it, font is often the most critical component of your application or website</h1>
+    <p class="subtitle">
+  </div>
+  <div class="container fab-container">
+    <a href="#network-of-networks" data-scroll class="fab"><paper-fab icon="expand-more"></paper-fab></a>
+  </div>
+</section>
+
+<section id="network-of-networks" class="no-padding-bottom">
+  <div class="container">
+    <div class="centered margin-bottom">
+      <h2>If you dont't have the right font for the right language all your build for design can quickly be destroyed</h2>
+      <p class="xl">Let's look at a few examples. On the image, characters for Meetei Mayek are displayed as Tofu. Effectively, the characters are displayed as little boxes to indicate your device doesn't have a font to display the text.
+    </div>
+  </div>
+  <div class="tight banner">
+    <div
+      class="video"
+      data-play-on-enter="true"
+      data-num-loops="1"
+      data-src="/about/static/videos/Fast_One_Signal_Desktop.webm">
+      <img src="/about/static/images/fallback/Nova_Fast_One_Signal_Desktop.jpg">
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="colored teal">
+  <div class="row">
+    <div class="six columns">
+      <div class="left-content content padded">
+        <h2>Stay in the fast lane</h2>
+        <p>Expand your possibilities. Find new markets on which you'll need to focus.
+      </div>
+    </div>
+    <div class="six columns">
+      <div class="right-content content padded">
+        <div class="coverage-check" ng-controller="CoverageCheck as ctrl">
+          <h2>Work areas</h2>
+          <p>Enter your address or zip code and check your coverage.</p>
+          <form class="speed" ng-submit="ctrl.submit($event)">
+            <div class="clearfix">
+              <div class="left">
+                <core-icon class="place-icon" icon="maps:place"></core-icon>
+              </div>
+              <div class="fill">
+                <input type="text" class="gtm-coverage-input glass" placeholder="Address or zip code" ng-model="address" required>
+              </div>
+            </div>
+
+            <div class="clearfix">
+              <div class="right">
+                <paper-button raised type="submit" ng-click="ctrl.submit(address)">Check Coverage</paper-button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="no-padding-bottom" id="connect-to-better-wi-fi">
+  <div class="container">
+    <div class="centered margin-bottom">
+      <h2>This image highlights another difficult situation</h2>
+      <p class="xl">The text is there, but ugly because it's displayed using fonts of mismatched styles and weights. 
+        Developers constantly have to address both issues. But sadly, solutions aren't always ideal.
+    </div>
+  </div>
+  <div class="tight">
+    <div
+      class="video brighten"
+      data-play-on-enter="true"
+      data-num-loops="0"
+      data-src="/about/static/videos/Easy_BetterWifi_Desktop.webm">
+      <img src="/about/static/videos/Easy_BetterWifi_Desktop.png">
+    </div>
+  </div>
+</section>
+
+<section class="light-grey vpn no-padding-bottom">
+  <div class="container">
+    <div class="row reversed">
+      <div class="six columns">
+        <h2>For example, the Daily Express Urdu, a Pakistani news website, runs into the problem that Urdu Nastaleeq font style isn't available</h2>
+        <p>So they had to pre-process every web page to present images instead.
+           While that works, it pulls a tremendous amount of time in pre-processing as well as bandwidth for the servers and load time for the users, which isn't really ideal.
+      </div>
+      <div class="six columns tight">
+        <img src="/about/static/images/vpn.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="colored request-an-invite">
+  <div class="container centered">
+    <h2>Be a part of Think Globally from the beginning</h2>
+    <p class="lg">
+    Join our Early Access Program and be one of the first on Think Globally.<br>
+    We look forward to connecting!
+    </p>
+    <div class="centered margin-top">
+      <a href="/about/signup/"><paper-button raised class="gtm-invite-footer inverted">Request invite</paper-button></a>
+    </div>
+  </div>
+</section>  <section class="next-nav">
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          &nbsp;
+        </div>
+        <div class="six columns next">
+         
+          <div class="link">
+            <a href="/about/plan/">
+              <paper-button class="arrowed inline green">
+                The Plan
+                <core-icon icon="arrow-forward"></core-icon>
+              </paper-button>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <ul class="footer">
+
+	
+	<li><a href="/about/tos/#privacy-notice">Terms & Services</a>
+  </ul>
+
+</div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBUNf2tHPLsP7PjB1R5ThKL2nyZAwGQkCY"></script>
+<script src="/about/static/js/main.min.js"></script>
