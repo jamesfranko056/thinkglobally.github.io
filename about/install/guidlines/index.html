@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Think Globally</title>
+<link href="https://thinkglobally.github.io/" rel="dns-prefetch">
+<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+<link href="/about/static/css/default.css" rel="stylesheet">
+<script src="/about/static/js/angular.min.js"></script>
+<script src="/about/static/js/webcomponents.min.js"></script>
+<link rel="import" href="/about/static/components/components.min.html">
+<link rel="shortcut icon" href="/about/static/images/favicon_128.png">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500,700">
+<body data-storage="https://thinkglobally.github.io/">
+<header role="banner">
+<div class="logo"><a href="/about/main/"><img src="/about/static/images/logo_2x.png"></a></div></header>
+<main>
+<div class="view">
+<h1>Guidelines for Using fonts</h1>
+<h2>Where to use</h2>
+<ul>
+<li><strong>UI</strong>: UI for websites or applications.</a>
+<li><strong>Printing materials</strong>: brochure, poster, business card, letter paper, envelope.
+<li><strong>Text in video</strong>: caption, subtitle, etc.
+<li><strong>Landmarks and billboards</strong>: billboards at center of city or train station, landmarks.</ul>
+<h2>How to use</h2>
+<ul>
+<li>For local use on your computer: download the fonts</a>
+<li>For use in a native app: bundle the fonts with your app
+<li>For use in web content: it is very important to use the fonts as web fonts. When a font is only specified in CSS font-family but not really delivered to the client as a web font, the browser will automatically fall back to another font.</a> In addition, be aware that the web latency for large fonts, such as for thinkglobally Sans CJK, can be large.</ul>
+<h2>Tips of using thinkglobally fonts in the CSS font-family property</h2>
+<ul>
+<li>Put fonts for the languages/scripts you care about most at the very beginning
+<li>Do not include fonts for the languages/scripts you do not care about to reduce web latency.
+<li>It is recommended to retain <code>"thinkglobally Sans"</code> in the list. Other thinkglobally fonts usually do not cover Latin letters, digits or punctuation.
+<li>Put <code>"thinkglobally Sans"</code> before <code>"thinkglobally Sans CJK"</code></a>
+<li>It is recommended to use <code>"thinkglobally Sans CJK {JP, KR, SC, TC}"</code> rather than <code>"thinkglobally Sans {JP, KR, SC, TC}"</code>, unless space/latency is very restricted. Each of the font families <code>"thinkglobally Sans CJK {JP, KR, SC, TC}"</code> supports all four languages, but has a different default language.</ul>
+<h3>Examples</h3>
+<p>For a Japanese website:
+<pre class="blockcode">
+<code>font-family: "thinkglobally Sans", "thinkglobally Sans CJK JP", sans-serif;</code>
+</pre>
+<p>For a website targeting Hindi, and then Tamil users
+<pre class="blockcode">
+<code>font-family: "thinkglobally Sans Devanagari", "thinkglobally Sans Tamil", "thinkglobally Sans", sans-serif;</code>
+</pre>
+<p>For an Arabic website that needs to use an UI font for UI elements, such as buttons and tabs, that have more strict vertical space:
+<pre class="blockcode">
+<code>font-family: "thinkglobally Naskh Arabic UI", "thinkglobally Sans UI", sans-serif;</code>
+</pre>
+<p>For a website targeting Armenian and Georgian users who prefer serif style:
+<pre class="blockcode">
+<code>font-family: "thinkglobally Serif Armenian", "thinkglobally Serif Georgian", "thinkglobally Serif", serif;</code>
+</pre></div></main>
+<nav id="menu" role="navigation">
+<div class="view">
+<ul>
+
+<section class="next-nav">
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          &nbsp;
+        </div>
+        <div class="six columns next">
+         
+          <div class="link">
+            <a href="/about/install/">
+              <paper-button class="arrowed inline green" role="button" tabindex="0">
+               Previous Action
+              </paper-button>
+          </a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
