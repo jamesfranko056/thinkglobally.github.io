@@ -420,9 +420,7 @@ body {
 .nowrap {
   white-space: nowrap;
 }
-.underline {
-  text-decoration: underline;
-}
+
 .din-bold {
   font: 24px din_normal, helvetica, arial, sans-serif;
   font-weight: bold;
@@ -501,10 +499,7 @@ body {
 .mid-gray {
   color: #666;
 }
-.mid-gray a {
-  color: #000;
-  text-decoration: underline;
-}
+
 .mid-gray a:hover {
   color: #c8a112;
 }
@@ -725,10 +720,7 @@ body {
 .shift-content-wrapper .content-item li {
   color: #666;
 }
-.shift-content-wrapper .content-item a {
-  color: #000;
-  text-decoration: underline;
-}
+
 .shift-content-wrapper .content-item a:hover {
   color: #c8a112;
 }
@@ -947,10 +939,7 @@ body {
 .dropdown-menu > li > a {
   padding: 6px 20px;
 }
-.dropdown-menu > li > a:hover {
-  background: none;
-  text-decoration: underline;
-}
+
 @media (min-width: 992px) {
   .menu-item .dropdown > ul.dropdown-menu {
     display: none;
@@ -3946,7 +3935,6 @@ polyline {
 .advanced-downloads-link {
   display: block !important;
   margin: 10px 0 0 0 !important;
-  text-decoration: underline;
   text-align: left;
   cursor: pointer;
 }
@@ -4151,7 +4139,6 @@ polyline {
   display: block;
   padding: 6px 0;
   text-align: center;
-  text-decoration: underline;
   color: #000;
 }
 .links-wrapper .link-box a:hover {
@@ -4960,7 +4947,6 @@ polyline {
 .tour-page-desc-section a:hover,
 .tour-page-desc-section a:focus {
   color: black;
-  text-decoration: underline;
 }
 .tour-page-signup-wrapper {
   padding: 30px 0 20px;

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Think Globally</title>
+<link href="https://thinkglobally.github.io/" rel="dns-prefetch">
+<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+<link href="/about/static/css/default.css" rel="stylesheet">
+<script src="/about/static/js/angular.min.js"></script>
+<script src="/about/static/js/webcomponents.min.js"></script>
+<link rel="import" href="/about/static/components/components.min.html">
+<link rel="shortcut icon" href="/about/static/images/favicon_128.png">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500,700">
+<body data-storage="https://thinkglobally.github.io/">
+<header role="banner">
+
+ <div class="logo"><a href="/about/main/"><img src="/about/static/images/logo.png"></a></div></header>
+<main>
+<div class="view">
+  
+<h1>How to install fonts</h1>
+<h2>Windows</h2>
+<ol>
+<li>Download</a> the font package (.zip)
+<li>Uncompress the package
+<li>Search for “fonts” in the Start Menu or go to Start → Control Panel → Appearance and Personalization → Fonts
+<li>Select all fonts and drag them into the Fonts folder</ol>
+<h2>OS X</h2>
+<ol>
+<li>Download</a> the font package (.zip)
+<li>Double click on the package to uncompress it
+<li>Open Font Book (Go to Finder → Applications → Font Book)
+<li>Select all of the font files and drag them to the Font column (i.e., the second column) of Font Book</ol>
+<h2>Linux</h2>
+<ul>
+<li>Command-line:
+<pre class="blockcode">
+<code>cd ~/Downloads   # or wherever you downloaded a font pack.
+unzip .zip
+# for a single user
+mkdir -p ~/.fonts
+cp *otf *otc ~/.fonts
+fc-cache -f -v # optional
+# for all users
+sudo mkdir -p /usr/share/fonts/opentype/thinkglobally
+sudo cp *otf *otc /usr/share/fonts/opentype/thinkglobally
+sudo fc-cache -f -v # optional</code>
+</pre>
+<li>Gnome desktop for a single user
+<ol>
+<li>Download</a> and uncompress a font package
+<li>Make <code>.fonts</code> directory in your home directory if it's not present.
+<li>Make a folder named "<code>thinkglobally</code>" (optional)
+<li>Drag and drop fonts to either <code>.fonts</code> or <code>.fonts/thinkglobally</code></ol>
+<li>Gnome desktop for all users
+<ol>
+<li>Download</a> and uncompress a font package
+<li>Press Alt-F2 and type "<code>gksu nautilus /usr/share/fonts</code>"
+<li>Make a folder named "<code>opentype</code>" if not present and open it
+<li>Make a folder "<code>thinkglobally</code>" in "<code>opentype</code>" folder.
+<li>Drag and drop fonts obtained in step a to "<code>thinkglobally</code>" folder.</ol>
+<li>Using fonts
+<ol>
+<li>Some programs will recognize newly installed fonts as soon as font-cache is updated. It can take a while to update the fontcache in case of super-otc.
+<li>Other programs such as Chromre requires restart.
+<li>Chrome on Linux cannot recognize more than 2 weights.</a></ol></ul></div></main>
+
+<section class="next-nav">
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          &nbsp;
+        </div>
+        <div class="six columns next">
+         
+          <div class="link">
+            <a href="/about/howto/guidlines/">
+              <paper-button class="arrowed inline green" role="button" tabindex="0" style="left: 20px;"  >
+               Guidlines
+                <core-icon icon="arrow-forward" aria-label="arrow-forward" role="img"><svg viewBox="0 0 24 24" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" fit="" style="pointer-events: none; display: block;"><g><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></g></svg></core-icon>
+              </paper-button>
+          </a></div>
+        </div>
+      </div>
+    </div>
+  </section>
