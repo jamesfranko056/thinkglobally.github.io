@@ -1,0 +1,19 @@
+{
+    "name": "Example of Worker in content script",
+    "version": "1",
+    "manifest_version": 2,
+
+    "background": {
+        "persistent": false,
+        "scripts": [ "worker_proxy.js" ]
+    },
+    "content_scripts": [{
+        "matches": ["*://localhost:8080/*"],
+        "js": [
+            "worker_proxy.js",
+            "your-contentscript.js"
+        ]
+    }],
+    "web_accessible_resources": [ "worker_proxy.html" ],
+    "permissions": [ "*://localhost:8080/*" ]
+}
